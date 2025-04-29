@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/invoicing/css/show-report.css"> <!-- Optional: Link to a CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <h1 class="heading"><%= pageTitle %></h1>
+
+        <!-- Report List and PDF Viewer -->
+        <div class="content">
+            <!-- Left Column: Button and Report List -->
+            <div class="left-column">
+                <!-- Back to Reports Button -->
+                <a href="/invoicing/report" class="btn"> <img src="/invoicing/images/back_to_report_management.png" alt="Go back" style="width:220px; "> </a>
+                
+                <!-- Generate Invoice Form -->
+                <form id="generateInvoiceForm" action="/invoicing/invoice/create" method="POST">
+                    <input id="reportPathInput" type="hidden" name="reportPath" value="/invoicing<%= latestReportPath %>">
+                    <button type="submit" class="btn"><img src="/invoicing/images/generate_invoice.png" alt="Generate Invoice" style="width: 220px;"></button>
+                </form>
+        
+                <!-- Report List -->
+                <ul class="report-list">
+                    <% reports.forEach(report => { %>
+                        <li onclick="loadReport('/invoicing<%= report.path %>')"><%= report.name %></li>
+                    <% }); %>
+                </ul>
+            </div>
+        
+            <!-- Right Column: PDF Viewer -->
+            <div class="pdf-container">
+                <iframe id="pdfViewer" src="/invoicing<%= latestReportPath %>" allowfullscreen></iframe>
+                <pre id="csvContainer" style="display: none;"></pre> <!-- Hidden by default -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        function loadReport(reportPath) {
+            // Update the PDF viewer
+            const pdfViewer = document.getElementById("pdfViewer");
+            pdfViewer.src = reportPath;
+
+            // Update the hidden input field in the form
+            const reportPathInput = document.getElementById("reportPathInput");
+            reportPathInput.value = reportPath;
+        }
+    </script>
+</body>
+</html>

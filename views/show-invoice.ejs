@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/invoicing/css/show-invoice.css"> <!-- Optional: Link to a CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <h1 class="heading"><%= pageTitle %></h1>
+
+        <!-- Report List and PDF Viewer -->
+        <div class="content">
+            <!-- Left Column: Button and Report List -->
+            <div class="left-column">
+                 <!-- Back to Reports Button -->
+                <a href="/invoicing/invoice" class="btn"> <img src="/invoicing/images/back_to_invoice_management.png" alt="Go back" style="width:220px;"> </a>
+                <!-- Back to reports Button -->
+                <a href="/invoicing/report/showall" class="btn"><img src="/invoicing/images/back_to_reports.png" alt="Go back" style="width: 220px;"></a>
+
+                <!-- Report List -->
+                <ul class="report-list">
+                    <% invoices.forEach(invoice => { %>
+                        <li onclick="loadInvoice('/invoicing<%= invoice.path %>')"><%= invoice.name %></li>
+                    <% }); %>
+                </ul>
+            </div>
+        
+            <!-- Right Column: PDF Viewer -->
+            <div class="pdf-container">
+                <iframe id="pdfViewer" src="/invoicing<%= latestInvoicePath %>" allowfullscreen></iframe>
+            </div>
+        </div>
+
+       
+       
+    </div>
+
+    <script>
+        function loadInvoice(invoicePath) {
+            const pdfViewer = document.getElementById("pdfViewer");
+            pdfViewer.src = invoicePath;
+        }
+
+        document.getElementById("generateInvoiceButton").addEventListener("click", () => {
+            const invoicePath = "/invoicing<%= latestInvoicePath %>"; // Replace with the actual report path
+            console.log("Generating invoice for report:", reportPath);
+            fetch("/invoicing/invoice/create", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({reportPath}),
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Invoice generation started!");
+                } else {
+                    alert("Failed to generate invoice.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        });
+    </script>
+</body>
+</html>

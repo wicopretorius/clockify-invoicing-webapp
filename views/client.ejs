@@ -1,0 +1,36 @@
+<!-- views/user.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client Information</title>
+  <link rel="stylesheet" href="/invoicing/css/client.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Client Information</h1>
+        <div class="card">
+          <% for (const workspaceId in groupedClients) { %>
+            <h2>Workspace ID: <%= workspaceId %> </h2>
+            <table border="1" cellspacing="0" cellpadding="10">
+              <thead>
+                <tr>
+                  <th>Client ID</th>
+                  <th>Client Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% groupedClients[workspaceId].forEach(client => { %>
+                <tr>
+                  <td><%= client.id %></td>
+                  <td><%= client.name %></td>
+                </tr>
+                <% }); %>
+              </tbody>
+            </table>
+          <% } %>
+        </div>
+        <a href="/invoicing/"> <img src="/invoicing/images/back_to_home.png" alt="Back to Home" style="width:220px;"> </a>
+    </div>
+</body>
+</html>

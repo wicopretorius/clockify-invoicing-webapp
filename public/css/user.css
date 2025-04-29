@@ -1,0 +1,89 @@
+/* public/CSS/user.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .card {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+   
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+   
+ 
+/* General table styling */
+table {
+  margin: 0 auto; /* Centers the table horizontally */
+  border-collapse: collapse; /* Makes the table look cleaner */
+  width: 100%; /* Ensure the table takes up the full width on mobile */
+  font-size: 16px; /* Default font size for better readability */
+}
+
+/* Styling for table cells */
+table th, table td {
+  padding: 10px; /* Add padding for better readability */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #000000; /* Add borders for a cleaner look */
+  word-wrap: break-word; /* Ensure long text wraps within the cell */
+}
+
+/* Styling for table headers */
+table th {
+  background-color: #f4f4f4; /* Add a background color for table headers */
+  font-weight: bold;
+  text-align: center; /* Center-align header text */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  table {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  table th, table td {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  /* Make the table scrollable horizontally */
+  .container {
+    overflow-x: auto; /* Add horizontal scrolling for the table */
+  }
+
+  table {
+    display: block; /* Make the table scrollable */
+    width: 100%; /* Ensure it fits within the container */
+  }
+}

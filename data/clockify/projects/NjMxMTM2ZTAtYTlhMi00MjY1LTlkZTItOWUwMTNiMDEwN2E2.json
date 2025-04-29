@@ -1,0 +1,116 @@
+[
+  {
+    "id": "6698dc3178057435d7cc5311",
+    "name": "CAD & Digital Mfg Spec.",
+    "clientId": "",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "6698d9a1be75126800d25972",
+    "name": "HTML, CSS & JS for Web Developers",
+    "clientId": "",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "6698d9f7be75126800d2666f",
+    "name": "IBM Data Science Prof. Cert.",
+    "clientId": "",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "6698dbb22b33f812f7d75e92",
+    "name": "Machine Learning for Trading Spec.",
+    "clientId": "",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "6698d96cbe75126800d25119",
+    "name": "Meta Back-End Developer Prof. Cert.",
+    "clientId": "",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "6698dc8b972828623a746142",
+    "name": "React, RNative & Django Full Stack",
+    "clientId": "",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "6698efee972828623a7732ee",
+    "name": "CozyWear",
+    "clientId": "",
+    "workspaceId": "64be738989afca11f080a99c"
+  },
+  {
+    "id": "67bc1b591b48840299c44254",
+    "name": "Bootloader",
+    "clientId": "6576956aba94d26e29d63cac",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65ec442133c90b16eabd99db",
+    "name": "Ethernet to TTL",
+    "clientId": "6576956aba94d26e29d63cac",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66961d33eb0a0273e4edd531",
+    "name": "Kamstrup Modem",
+    "clientId": "6576956aba94d26e29d63cac",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "6639f743946742694dfb3539",
+    "name": "SciConLite",
+    "clientId": "6576956aba94d26e29d63cac",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66040fd55599d034111e5436",
+    "name": "Solar Repeater",
+    "clientId": "6576956aba94d26e29d63cac",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "67f392a5243cd020c4b38085",
+    "name": "Test",
+    "clientId": "67f392a3002a3d02a2774be9",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "657b55215a22ee7e8f1d8453",
+    "name": "TTL to RS485",
+    "clientId": "6576956aba94d26e29d63cac",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65769ae811ab57349fc21fa2",
+    "name": "wMbus to RS485",
+    "clientId": "6576956aba94d26e29d63cac",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66a893cb27fcf16863d388ac",
+    "name": "Errands for Me",
+    "clientId": "",
+    "workspaceId": "6698deb6972828623a74cdcd"
+  },
+  {
+    "id": "66a893c2d2b6e97bc264bf83",
+    "name": "Errands for Mom",
+    "clientId": "",
+    "workspaceId": "6698deb6972828623a74cdcd"
+  },
+  {
+    "id": "66a8919baa2db16b0b46aaee",
+    "name": "Errands for Wife",
+    "clientId": "",
+    "workspaceId": "6698deb6972828623a74cdcd"
+  },
+  {
+    "id": "66a894b727fcf16863d3ab12",
+    "name": "Labels",
+    "clientId": "",
+    "workspaceId": "6698deb6972828623a74cdcd"
+  }
+]

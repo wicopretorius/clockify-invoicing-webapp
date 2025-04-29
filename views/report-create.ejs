@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-GB"> <!-- Set the locale to British English -->
+<head>
+  <meta charset="UTF-8">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="/invoicing/css/report.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Report</h1>
+        <form action="/invoicing/report/create" method="POST" class="new-data">
+            <!-- User ID -->
+            <input type="hidden" id="userId" name="userId" value="<%= userId %>">
+
+            <!-- Workspace Selection -->
+            <div class="form-group">
+                <label for="workspaceId">Select Workspace:</label>
+                <select id="workspaceId" name="workspaceId" required>
+                    <% if (workspaces && workspaces.length > 0) { %>
+                        <% workspaces.forEach(workspace => { %>
+                            <option value="<%= workspace.id %>"><%= workspace.name %></option>
+                        <% }); %>
+                    <% } else { %>
+                        <option value="" disabled>No workspaces available</option>
+                    <% } %>
+                </select>
+            </div>
+
+            <!-- Client Selection -->
+            <div class="form-group">
+                <label for="clientId">Select Client:</label>
+                <select id="clientId" name="clientId" required>
+                    <!-- Options will be dynamically populated by JavaScript -->
+                </select>
+            </div>
+
+            <!-- Project Box -->
+            <div class="form-group">
+                <label>Projects:</label>
+                <div id="projectBox" class="project-box">
+                    <!-- Projects will be dynamically populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Hidden input for project IDs -->
+            <!--<input type="hidden" id="projectIds" name="projectIds">-->
+
+            <!-- Date Range Start -->
+            <div class="form-group">
+                <label for="dateRangeStart">Date Range Start:</label>
+                <input type="date" id="dateRangeStart" name="dateRangeStart" required>
+            </div>
+
+            <!-- Date Range End -->
+            <div class="form-group">
+                <label for="dateRangeEnd">Date Range End:</label>
+                <input type="date" id="dateRangeEnd" name="dateRangeEnd" required>
+            </div>
+
+           
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn"><img src="/invoicing/images/generate_report.png" alt="Generate Report" style="width: 180px;"></button>
+        </form>
+        <a href="/invoicing/report"> <img src="/invoicing/images/back_to_report_management.png" alt="Go back" style="width:220px;"> </a>
+    </div>
+
+    <!-- Hidden data for clients and projects -->
+    <script id="clientsData" type="application/json"><%- JSON.stringify(clients) %></script>
+    <script id="projectsData" type="application/json"><%- JSON.stringify(projects) %></script>
+
+    <!-- Include the JavaScript file -->
+    <script src="/invoicing/scripts/report-create.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* public/CSS/user.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center */
+    justify-content: top; /* Vertically center */
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.card {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.existing-data, .new-data {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;    
+    text-align: center;
+    cursor:pointer;
+}
+
+
+
+table {
+    width: 100%; /* Make the table take up the full width of the container */
+    table-layout: fixed; /* Ensures columns have fixed widths */
+}
+
+th, td {
+    width: 33%; /* Set equal width for all columns */
+    text-align: left; /* Optional: Align text to the left */
+}
+
+/* Style for the project box container */
+.project-box {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Inner spacing */
+    margin: 10px auto; /* Center horizontally */
+    max-height: 200px; /* Limit height */
+    overflow-y: auto; /* Add scroll if content overflows */
+    max-width: 300px; /* Limit width */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+}
+
+/* Style for individual project items */
+.project-box div {
+    min-width: 200px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff; /* White background for each project */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 3px; /* Slightly rounded corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}

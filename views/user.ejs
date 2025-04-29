@@ -1,0 +1,43 @@
+<!-- views/user.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Details</title>
+  <link rel="stylesheet" href="/invoicing/css/user.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Information</h1>
+    <div class="card">
+      <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>API Key</strong></td>
+            <td><%= user.apiKey %></td>
+          </tr>
+          <tr>
+            <td><strong>ID</strong></td>
+            <td><%= user.id %></td>
+          </tr>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td><%= user.name %></td>
+          </tr>
+          <tr>
+            <td><strong>Email</strong></td>
+            <td><%= user.email %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <a href="/invoicing/"> <img src="/invoicing/images/back_to_home.png" alt="Back to Home" style="width:220px;" class="btn"> </a>
+  </div>
+</body>
+</html>

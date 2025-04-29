@@ -1,0 +1,33 @@
+<!-- views/user.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workspace Details</title>
+  <link rel="stylesheet" href="/invoicing/css/workspace.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Workspace Information</h1>
+        <div class="card">
+          <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% workspaces.forEach(workspace => { %>
+              <tr>
+                <td><%= workspace.id %></td>
+                <td><%= workspace.name %></td>
+              </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div>
+        <a href="/invoicing/"> <img src="/invoicing/images/back_to_home.png" alt="Back to Home" style="width:220px;"> </a>
+      </div>
+</body>
+</html>

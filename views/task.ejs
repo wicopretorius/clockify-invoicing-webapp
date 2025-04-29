@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="/invoicing/css/task.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Information</h1>
+        <div class="card">
+          <% for (const workspaceId in groupedTasks) { %>
+            <h2>Workspace ID: <%= workspaceId %></h2>
+            <% for (const projectId in groupedTasks[workspaceId]) { %>
+              <h3>Project ID: <%= projectId %></h3>
+              <table border="1" cellspacing="0" cellpadding="10">
+                <thead>
+                  <tr>
+                    <th>Task ID</th>
+                    <th>Task Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% groupedTasks[workspaceId][projectId].forEach(task => { %>
+                  <tr>
+                    <td><%= task.id %></td>
+                    <td><%= task.name %></td>
+                  </tr>
+                  <% }); %>
+                </tbody>
+              </table>
+            <% } %>
+          <% } %>
+        </div>
+        <a href="/invoicing/"> <img src="/invoicing/images/back_to_home.png" alt="Back to Home" style="width:220px;"> </a>
+    </div>
+</body>
+</html>

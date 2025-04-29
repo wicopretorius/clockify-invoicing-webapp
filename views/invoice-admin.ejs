@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="/invoicing/css/invoice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice Admin</h1>
+
+        <!-- Section for Existing Data -->
+        <div class="existing-data">
+            <h2>Existing Data</h2>
+            <% if (adminData) { %>
+                <table border="1" cellspacing="0" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <th>Client Address</th>
+                            <th>Client Attention</th>
+                            <th>Banking Details</th>
+                            <th>Company Logo</th>
+                            <th>Client Logo</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><%= adminData.clientAddress || "Not Provided" %></td>
+                            <td><%= adminData.clientAttention || "Not Provided" %></td>
+                            <td><%= adminData.bankingDetails || "Not Provided" %></td>
+                            <td>
+                                <% if (adminData.companyLogo) { %>
+                                    <img src="/<%= adminData.companyLogo %>" alt="Company Logo" style="max-width: 100px; max-height: 100px;">
+                                <% } else { %>
+                                    Not Uploaded
+                                <% } %>
+                            </td>
+                            <td>
+                                <% if (adminData.clientLogo) { %>
+                                    <img src="/<%= adminData.clientLogo %>" alt="Client Logo" style="max-width: 100px; max-height: 100px;">
+                                <% } else { %>
+                                    Not Uploaded
+                                <% } %>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            <% } else { %>
+                <p>No data available. Please add new invoice admin data.</p>
+            <% } %>
+        </div>
+
+        <!-- Section for Adding New Data -->
+        <div class="new-data">
+            <h2>Add New Data</h2>
+            <form action="/invoicing/invoice/admin" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <h3>Company Logo</h3>
+                    <label for="companyLogo">Upload Company Logo:</label>
+                    <input type="file" id="companyLogo" name="companyLogo" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <h3>Client Logo</h3>
+                    <label for="clientLogo">Upload Client Logo:</label>
+                    <input type="file" id="clientLogo" name="clientLogo" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <h3>Client Information</h3>
+                    <label for="clientAddress">Client Address:</label>
+                    <textarea id="clientAddress" name="clientAddress" rows="3"></textarea>
+
+                    <label for="clientAttention">Client Attention:</label>
+                    <input type="text" id="clientAttention" name="clientAttention">
+                </div>
+
+                <div class="form-group">
+                    <h3>Company Banking Details</h3>
+                    <label for="bankingDetails">Banking Details:</label>
+                    <textarea id="bankingDetails" name="bankingDetails" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn"><img src="/invoicing/images/save.png" alt="Generate Invoice" style="width: 120px;"></button>
+            </form>
+        </div>
+
+        <a href="/invoicing/invoice"> <img src="/invoicing/images/back_to_invoice_management.png" alt="Go back" style="width:220px;"> </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+[
+  {
+    "id": "669bb24a2dc05c0572e7b5a6",
+    "name": "Intro to Digital Mfg & Ino",
+    "projectId": "6698dc3178057435d7cc5311",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "669bc7f62dc05c0572e833a4",
+    "name": "Introduction to Trading, Machine Learning & GCP",
+    "projectId": "6698dbb22b33f812f7d75e92",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "6698dcb0be75126800d2bc21",
+    "name": "Programming in Python",
+    "projectId": "6698d96cbe75126800d25119",
+    "workspaceId": "63f481629853a3674fb4177e"
+  },
+  {
+    "id": "66aa8b7cb48f5a264a48db75",
+    "name": "Electronics Design",
+    "projectId": "6698efee972828623a7732ee",
+    "workspaceId": "64be738989afca11f080a99c"
+  },
+  {
+    "id": "66a401a565149e021ea744e7",
+    "name": "3D Design",
+    "projectId": "6698efee972828623a7732ee",
+    "workspaceId": "64be738989afca11f080a99c"
+  },
+  {
+    "id": "6698f00c2dc05c0572ad2f63",
+    "name": "Market research",
+    "projectId": "6698efee972828623a7732ee",
+    "workspaceId": "64be738989afca11f080a99c"
+  },
+  {
+    "id": "67ce87122e0f3f5949fcc75c",
+    "name": "Firmware",
+    "projectId": "67bc1b591b48840299c44254",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "6794fd477313f13e81091c9e",
+    "name": "Bootloader Firmware",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "67615d93b7c98435faf6d49f",
+    "name": "Bootloader Utility DEV",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "670930f031414c2f6c81c8fb",
+    "name": "Ver2 PCB Faultfinding & Testing",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66d46e830100f83adbd94c38",
+    "name": "Config Frontend Dev",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66caf13602bfd2213c4f0d5d",
+    "name": "Ver2 PCB Design",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66caeed943e70b57ae10a66a",
+    "name": "Ver2 Schematic Design",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "6608065e7288ae7525a3a277",
+    "name": "Firmware Dev",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65faae0157bb57198c91f952",
+    "name": "Prototype PCB Design",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65efe5a693d27d535f0aef89",
+    "name": "Prototype Schematic Design",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65ec445e9de3734687dd5b54",
+    "name": "Market Research",
+    "projectId": "65ec442133c90b16eabd99db",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66961d4ec855372fa38e11ce",
+    "name": "Review Hardware Design",
+    "projectId": "66961d33eb0a0273e4edd531",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "67501a753d3b7b6fd3f81978",
+    "name": "Bootloader Firmware",
+    "projectId": "6639f743946742694dfb3539",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "671f99b1605d557fc530aa93",
+    "name": "Firmware Dev",
+    "projectId": "6639f743946742694dfb3539",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "663a09d5fdaf936e90b498a6",
+    "name": "Visit iSERT - EMC & RF Testing",
+    "projectId": "6639f743946742694dfb3539",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "6639f7f15e8ef3683b1c86a0",
+    "name": "Travel iSERT - EMC & RF Testing",
+    "projectId": "6639f743946742694dfb3539",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66069b0ec2f9d32d5f01ce3a",
+    "name": "Schematic design",
+    "projectId": "66040fd55599d034111e5436",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "6605768f2588ca74efe6d374",
+    "name": "Review design",
+    "projectId": "66040fd55599d034111e5436",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "6604166ea9e0d922a68d016f",
+    "name": "Research available Technologies",
+    "projectId": "66040fd55599d034111e5436",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66041048a9e0d922a68be2dc",
+    "name": "Define project scope",
+    "projectId": "66040fd55599d034111e5436",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "657b555bc6266d7a098bbfd7",
+    "name": "Schematic Design",
+    "projectId": "657b55215a22ee7e8f1d8453",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66b36ad79e39133991370ede",
+    "name": "Prototype program & test",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66a3fab2596ed853f4fcf092",
+    "name": "Interface Software",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66921b6cf37ecc4696b8922e",
+    "name": "Prototype Testing",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "66910a1b01ffec30c458e3a2",
+    "name": "Prototype Documentation",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65e772c87ddfd303aa69c574",
+    "name": "PoC PCB Design",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65aaaf63887d703e4ea0ee4e",
+    "name": "Multical 21 Message Destructuring",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65802b1957ae675ff608807f",
+    "name": "PoC Firmware Development",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "65800c0afc58891a862c537b",
+    "name": "PoC Schematic Design",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "657af52c88b53c71d2872108",
+    "name": "Product Meeting",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "657a988e96d78f36196fdb75",
+    "name": "Research available µC technologies",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "657a9350c736890b20d13010",
+    "name": "Define Project Scope",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "657806efba94d26e2904b732",
+    "name": "Research available RF Technologies",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "6576f1a8b3999e669116c95c",
+    "name": "WM-Bus Market Research",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  },
+  {
+    "id": "6576cff88024e24686ce6ce6",
+    "name": "Project Plan Draft",
+    "projectId": "65769ae811ab57349fc21fa2",
+    "workspaceId": "657694e7b0e5636f81a13352"
+  }
+]

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+ #apiKey {
+    width: 400px; /* Adjust the width as needed */
+    font-weight: bold;
+  }
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  
+  width: 120px;
+  background-color: #ffffff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+@media (max-width: 600px) {
+  #apiKey {
+    width: 100%; /* Make the input field take the full width of its container */
+    font-weight: bold;
+    word-wrap: break-word; /* Ensure text wraps if it's too long */
+    white-space: normal; /* Allow wrapping of text */
+  }
+
+  form {
+    display: flex;
+    flex-direction: column; /* Stack the label and input vertically */
+    align-items: center; /* Ensure the input stretches to fit the container */
+  }
+
+  label {
+    margin-bottom: 5px; /* Add spacing between the label and input */
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}

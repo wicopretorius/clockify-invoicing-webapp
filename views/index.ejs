@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="/invoicing/css/index.css"> <!-- Optional: Link to a CSS file -->
+</head>
+<body>
+  <h1></h1>
+  <div class="container">
+    <h1><%= pageTitle %></h1>
+    <div class="card">
+  <form id="apiKeyForm" action="/invoicing/cookie" method="POST">
+    <label for="apiKey">API Key:</label>
+    <input type="text" id="apiKey" name="apiKey" value="<%= apikey %>" class="input">
+    <!--<button type="button" id="editButton">Edit</button>-->
+    <button type="submit" id="saveButton">Save</button>
+  </form>
+</div>
+ <!-- Add the User button -->
+ <a class="btn" href="/invoicing/user"> <img src="/invoicing/images/user.png" alt="Go back" style="width:130px;"> </a>
+ <a class="btn" href="/invoicing/workspace"> <img src="/invoicing/images/workspace.png" alt="Go back" style="width:130px;"> </a>
+ <a class="btn" href="/invoicing/client"> <img src="/invoicing/images/client.png" alt="Go back" style="width:130px;"> </a>
+ <a class="btn" href="/invoicing/project"> <img src="/invoicing/images/project.png" alt="Go back" style="width:130px;"> </a>
+ <a class="btn" href="/invoicing/task"> <img src="/invoicing/images/task.png" alt="Go back" style="width:130px;"> </a>
+ <a class="btn" href="/invoicing/report"> <img src="/invoicing/images/report.png" alt="Go back" style="width:130px;"> </a>
+ <a class="btn" href="/invoicing/invoice"> <img src="/invoicing/images/invoice.png" alt="Go back" style="width:130px;"> </a>
+</div>
+  
+   
+
+  
+</body>
+</html>
